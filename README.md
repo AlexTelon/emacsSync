@@ -33,3 +33,5 @@ This should give both a view of what is happening. Though you will lose stuff if
 The other option is to use the whole .emacs file as is with the added scripts. Right now its very hardcoded, will fix.
 
 Anyways I think I should be able to tinker with it to increase the speed. Also the python file uses polling right now, that could be improved as well for further performance.
+
+Remember to look at signal.sh its hardcoded right now. Change manually to Pin or get it with gawk or smth.
