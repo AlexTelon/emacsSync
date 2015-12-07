@@ -34,4 +34,7 @@ The other option is to use the whole .emacs file as is with the added scripts. R
 
 Anyways I think I should be able to tinker with it to increase the speed. Also the python file uses polling right now, that could be improved as well for further performance.
 
-Remember to look at signal.sh its hardcoded right now. Change manually to Pin or get it with gawk or smth.
+use this to run it. 5199 is the PID of the program u want to be updated.
+while ./sleep_until_modified.py testfile || sleep 1; do ./signal.sh 5199 ; done
+
+signal.sh has a gawk version that is in the comments, it is from http://www.emacswiki.org/emacs/AutoSave
